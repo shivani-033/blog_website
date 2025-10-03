@@ -1,0 +1,74 @@
+
+.main {
+    background-color: #879cc0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+    margin-top: 30px;
+}
+
+/* Headings inside content */
+.main h1 ,p  {
+    font-size: 2.5rem;
+
+    text-align: center;
+    margin-bottom: 10px;
+    
+    color: rgb(3, 2, 17);
+}
+
+.main h3 {
+    font-size: 2rem;
+    color: #071327; /* blue highlight */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Paragraphs */
+.main p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+    line-height: 1.7;
+}
+
+/* Image grids */
+.main1, .main2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* Individual images */
+.main1 span img, .main2 span img {
+    width: auto;
+    height: auto;
+    
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for images */
+.main1 span img:hover, .main2 span img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .main1, .main2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main1 span img, .main2 span img {
+        width: 80%;
+        height: auto;
+    }
+}

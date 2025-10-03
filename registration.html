@@ -1,0 +1,19 @@
+{% extends "base.html"%}
+
+{% block title %} registration {% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+{% endblock %}
+{% block content %}
+<h1>Registor your account </h1>
+<form method="POST" action="{{ url_for('registration') }}">
+
+       {{form.hidden_tag()}}
+    <br>
+    {{form.username.label}} <br>
+    {{form.username(rows=2 , cols=10)}} <br>
+    {{form.password.label}} <br>
+    {{form.password(rows=2 , cols=10)}} <br>
+    {{form.submit}}
+</form>
+{% endblock %}

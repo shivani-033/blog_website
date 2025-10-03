@@ -1,0 +1,93 @@
+/* registration.css */
+
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #cee7f3, #a5cacf);
+    margin: 0;
+    padding: 0;
+}
+
+/* Registration form container */
+form {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 25px;
+    background: #888584;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+h3{
+    text-align: center;
+}
+/* Page heading */
+h1 {
+    text-align: center;
+    color: #103347;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+    text-align: center;
+}
+
+/* Input fields */
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.3s ease;
+    text-align: center;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.3s ease;
+    text-align: center;
+}
+
+input[type="text"]:focusinput[type="password"]:focus {
+    border-color: #00796b;
+    outline: none;
+    text-align: center;
+}
+input[type="password"]:focus {
+    border-color: #00796b;
+    outline: none;
+    text-align: center;
+}
+
+/* Submit button */
+input[type="submit"],
+button {
+    width: 100%;
+    padding: 12px;
+    background: #3a75ac;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background: #013170;
+}

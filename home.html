@@ -1,0 +1,35 @@
+{%  extends "base.html" %}
+
+{% block title%} home page {% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style1.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<h1>Explore the blogs </h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+<div class="main">
+    <h3>Latest Post</h3>
+    <div class="main1">
+        <span id="a">
+            <img src="{{url_for('static' , filename = 'images/img1.jpg')}}" alt="img1" >
+            
+            
+        </span>
+        <span id="b">
+           <img src="{{url_for('static' , filename = 'images/img2.jpg')}}" alt="img2" height="500" >
+        </span>
+    </div>
+    <div class="main2">
+        <span id="c">
+            <img src="{{url_for('static' , filename = 'images/img3.jpg')}}" alt="img3" height="250">
+        </span>
+        <span id="d">
+            <img src="{{url_for('static' , filename = 'images/img4.jpg')}}" alt="img4" height="250">
+        </span>
+    </div>
+</div>
+
+{% endblock %}
